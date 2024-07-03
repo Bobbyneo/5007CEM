@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="profile.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="http://localhost/5007CEM/doclogin.html">Home</a>
+            <a href="doctor_dashboard.html#appointments">Appointments</a>
+            <a href="doctor_dashboard.html#patients">Patients</a>
+            <a href="doctor_dashboard.html#records">Records</a>
+            <a href="doctor_dashboard.html#messages">Messages</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="edit-profile">
+            <h2>Edit Profile</h2>
+            <form action="submit_profile.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="Dr. Bryan" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="dr.bryan@gmail.com" required><br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" value="+1234567890" required><br><br>
+
+                <label for="specialty">Specialty:</label>
+                <input type="text" id="specialty" name="specialty" value="Cardiology" required><br><br>
+
+                <label for="bio">Bio:</label><br>
+                <textarea id="bio" name="bio" rows="4" cols="50">A brief bio about Dr. Bryan...</textarea><br><br>
+
+                <input type="submit" value="Save Changes">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

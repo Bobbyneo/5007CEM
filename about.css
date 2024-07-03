@@ -1,0 +1,82 @@
+:root {
+    --primary-color: #1ebeb6;
+    --secondary-color: #efbb20;
+    --background-color: #f7f7f7;
+    --text-color: #333;
+    --nav-background: #2c353d;
+    --footer-background: #2c353d;
+    --button-background: linear-gradient(90deg, rgba(30, 190, 182, 1) 0%, rgba(0, 130, 124, 1));
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header .bobby {
+    text-align: center;
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+}
+
+.auth-buttons {
+    display: inline-block;
+    margin-left: auto; /* Aligns to the right side of the nav bar */
+}
+
+.auth-buttons .button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 10px 20px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the buttons appear inline */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.auth-buttons .button:hover {
+    background-color: #45a049; /* Darker green background on hover */
+}
+
+nav {
+    background-color: var(--nav-background);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+.content h1,h2{
+    text-align: center;
+    font-size: 30px;
+}
+.content p{
+    font-size: 22px;
+    padding: 1rem;
+}
+.content ul{
+    font-size: 22px;
+    padding: 1rem; 
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="appointment.css"/>
+    <title>Book Appointment</title>
+</head>
+<body>
+    <header>
+      
+    </header>
+    <nav>
+        <a href="http://localhost/5007CEM/homepage.html">Home</a>
+        <a href="http://localhost/5007CEM/Doctor.html">Doctors</a>
+        <a href="http://localhost/5007CEM/About.html">About Us</a>
+        <a href="http://localhost/5007CEM/Contact.html">Contact</a>
+        <div class="auth-buttons">
+            <a href="http://localhost/5007CEM/Login.html" class="button">Login</a>
+            <a href="http://localhost/5007CEM/register.html" class="button">Register</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Book Appointment</h1>
+        <form id="appointmentForm" action="book appointment.php" method="POST">
+            <label for="doctorSelect">Select Doctor:</label>
+            <select id="doctorSelect" name="doctor" required>
+                <option value="" disabled selected>Select a doctor</option>
+                <option value="Dr. John Doe|Paediatrician">Dr. John Doe - Paediatrician</option>
+                <option value="Dr. Jane Smith|Orthopaedic">Dr. Jane Smith - Orthopaedic</option>
+                <option value="Dr. Bryan Lim|Urologist">Dr. Bryan Lim - Urologist</option>
+            </select>
+            <br><br>
+            <label for="appointmentDate">Select Date:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+            <br><br>
+            <label for="appointmentTime">Select Time:</label>
+            <select id="appointmentTime" name="appointmentTime" required>
+                <!-- Time options will be populated by JavaScript -->
+            </select>
+            <br><br>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+    <br><br>
+    <footer>
+        &copy; 2024 Bobbyneo Hospital. All rights reserved.
+    </footer>
+
+    <script src="populateTimes.js"></script>
+</body>
+</html>

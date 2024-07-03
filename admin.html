@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin_style.css">
+</head>
+<body>
+    <header>
+        <h1>Hospital Admin Panel</h1>
+        <nav>
+            <a href="#doctors">Manage Doctors</a>
+            <a href="#reviews">Manage Reviews</a>
+            <a href="http://localhost/5007CEM/Login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="doctors">
+            <h2>Manage Doctors</h2>
+            <div class="doctor-list">
+                <h3>Add Doctor</h3>
+                <form action="add doctor.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" required>
+                    
+                    <input type="submit" value="Add Doctor">
+                </form>
+
+                <h3>Delete Doctor</h3>
+                <form action="delete doctor.php" method="POST">
+                    <label for="doctor_id">Doctor ID:</label>
+                    <input type="text" id="doctor_id" name="doctor_id" required>
+                    
+                    <input type="submit" value="Delete Doctor">
+                </form>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <h2>Manage Reviews</h2>
+            <div class="review-list">
+                <h3>Delete Review</h3>
+                <form action="delete review.php" method="POST">
+                    <label for="review_id">Review ID:</label>
+                    <input type="text" id="review_id" name="review_id" required>
+                    
+                    <input type="submit" value="Delete Review">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

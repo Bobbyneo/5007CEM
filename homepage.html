@@ -1,15 +1,125 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
-    <head>
-        <title>Homepage</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Bobby Neo Hospital</title>
+</head>
+<body>
+    <header>
+        <div class="bobby"><img src="Image/bobby.jpg" style="width:1750px;height:300px;"></div>
+        <nav>
+            <a href="http://localhost/5007CEM/homepage.html">Home</a>
+            <a href="http://localhost/5007CEM/Doctor.html">Doctors</a>
+            <a href="http://localhost/5007CEM/About.html">About Us</a>
+            <a href="http://localhost/5007CEM/Contact.html">Contact</a>
+            <div class="auth-buttons">
+                <a href="http://localhost/5007CEM/Login.html" class="button">Login</a>
+                <a href="http://localhost/5007CEM/register.html" class="button">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="home">
+        <div class="main-home">
+            <div class="main-inner-home">
+                <h2>We are Providing</h2> 
+                <h1>The Best Medical Services</h1>
+                <p>Welcome to the best Hospital in Malaysia</p>
+            </div>
+            <div class="main-inner-home right-content-img">
+                <img src="Image/medical.png" alt="Medical Services">
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="services-heading">
+            <h1>Our <span>Serving</span></h1>
+        </div>
+       
+        <div class="main-services">
+            <div class="main-inner-services">
+                <div class="services-img">
+                    <img src="Image/flu.jpg" alt="Paediatrician">
+                </div>
+                <div class="services-content">
+                    <h2>Paediatrician</h2>
+                    <p>At Bobby Neo Hospital, we understand that children require specialized care tailored to their unique needs. Our team of dedicated paediatricians is here to provide comprehensive healthcare services for your child from infancy through adolescence.</p>
+                    <a href="https://www.healthdirect.gov.au/what-do-paediatricians-do">Read more</a>
+                </div>
+            </div>
+        </div>
+               
+        <div class="main-services">
+            <div class="main-inner-services">
+                <div class="services-img">
+                    <img src="Image/leg.jpg" alt="Orthopaedic">
+                </div>
+                <div class="services-content">
+                    <h2>Orthopaedic</h2>
+                    <p>At Bobby Neo Hospital, we understand that children require specialized care tailored to their unique needs. Our team of dedicated orthopaedic specialists is here to provide comprehensive healthcare services for your child from infancy through adolescence.</p>
+                    <a href="https://www.beaconhospital.com.my/specialty/orthopaedic-surgery/">Read more</a>
+                </div>
+            </div>
+        </div>
+                     
+        <div class="main-services">
+            <div class="main-inner-services">
+                <div class="services-img">
+                    <img src="Image/stomach.jpg" alt="Urologist">
+                </div>
+                <div class="services-content">
+                    <h2>Urologist</h2>
+                    <p>At Bobby Neo Hospital, we understand that children require specialized care tailored to their unique needs. Our team of dedicated urologists is here to provide comprehensive healthcare services for your child from infancy through adolescence.</p>
+                    <a href="https://www.healthline.com/health/what-is-a-urologist">Read more</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-services">
+            <div class="main-inner-services">
+                <div class="services-img">
+                    <img src="Image/appoinment.jpeg" alt="Appointment Image">
+                </div>
+                <div class="services-content">
+                    <h2>Make Appointment</h2>
+                    <p>A Great Place To work. A Nice Place To receive Care Leading Medicine.</p>
+                    <a href="http://localhost/5007CEM/Appointment.html">Make Appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Review Section -->
+
+    <div class="reviews-heading">
+        <h1>Patient <span>Reviews</span></h1>
+    </div>
+    <div class="review-form">
+        <h3>Leave a Review</h3>
+        <form action="add review.php" method="POST">
+            <label for="doctor_id">Doctor:</label>
+            <select id="doctor_id" name="doctor_id" required>
+                <!-- Populate doctor options dynamically -->
+                <option value="1">Dr. John Doe</option>
+                <option value="2">Dr. Jane Smith</option>
+                <option value="3">Dr. Bryan Lim</option>
+            </select><br><br>
+            <label for="review_text">Review:</label>
+            <textarea id="review_text" name="review_text" required></textarea><br><br>
+            <input type="submit" value="Submit Review">
+        </form>
+        <div class="review-list">
+            <h3>Existing Reviews</h3>
+            <!-- Reviews will be displayed here -->
+            <?php include 'display_reviews.php'; ?>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Bobby Neo Hospital. All rights reserved.
+    </footer>
+</body>
 </html>

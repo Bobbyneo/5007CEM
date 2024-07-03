@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="doctorlogin.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Doctor Dashboard</h1>
+         </header>
+        
+        <main>
+                
+            <section id="edit-profile" class="card">
+                <h2>Edit Profile</h2>
+                <form id="profile-form" method="post" action="update profile.php">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <button type="submit">Update Profile</button>
+                </form>
+            </section>
+           
+            <section id="appointments" class="card">
+                <h2>Appointments</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Appointment ID</th>
+                            <th>Patient Name</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Appointments list will be dynamically populated here -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
